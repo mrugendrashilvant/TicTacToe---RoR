@@ -1,0 +1,49 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+ 
+ *{
+     margin: 0;
+     box-sizing: border-box;
+     background-color: antiquewhite;
+ }
+ .container {
+     font-family: 'Manrope', sans-serif;
+     padding: 24px 14px;
+ }
+ .container button {
+     cursor: pointer;
+     padding: 12px 18px;
+     font-size: larger;
+     border: none;
+     background-color: lightgreen;
+     color: darkgreen;
+     border-radius: 14px;
+     transition: 0.4s;
+     margin: 10px 0px;
+ }
+ .container button:hover {
+     background-color: darkgreen;
+     color: lightgreen;
+ }
+ .container #turn_player {
+     opacity: 0.7;
+     font-size: 150%;
+     font-weight: bolder;
+     padding: 14px 28px;
+     color: darkred;
+ }
