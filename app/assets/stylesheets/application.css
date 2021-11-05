@@ -17,33 +17,66 @@
  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
  
  *{
-     margin: 0;
-     box-sizing: border-box;
-     background-color: antiquewhite;
- }
- .container {
-     font-family: 'Manrope', sans-serif;
-     padding: 24px 14px;
- }
- .container button {
-     cursor: pointer;
-     padding: 12px 18px;
-     font-size: larger;
-     border: none;
-     background-color: lightgreen;
-     color: darkgreen;
-     border-radius: 14px;
-     transition: 0.4s;
-     margin: 10px 0px;
- }
- .container button:hover {
-     background-color: darkgreen;
-     color: lightgreen;
- }
- .container #turn_player {
-     opacity: 0.7;
-     font-size: 150%;
-     font-weight: bolder;
-     padding: 14px 28px;
-     color: darkred;
- }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background-color: #148dbd;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+.heading {
+    background-color: whitesmoke;
+    opacity: 0.8;
+    padding: 8px 0px;
+    box-shadow: 5px 10px 10px black;
+}
+.header{
+    display: flex;
+    margin: auto;
+    width: 400px;
+    justify-content: space-around;
+    padding: 50px;
+}
+.header>div{
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.app {
+    margin: auto;
+    padding: 50px;
+    width: 400px;          
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    
+}
+
+.grid-item {
+    height: 100px;
+    line-height: 100px;
+    font-size: 2rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    background: #444;
+    border: 2px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+}
+
+#turn{
+    display: none;
+}
+.playerX{
+    color: #fff;
+    background-color: skyblue;
+}
